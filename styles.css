@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(39, 39, 39);
+    color: silver;
+    font-family: Arial, sans-serif;
+}
+/* this selector tagers the element id current day and creates the size and postion */
+#currentDay {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+/* this slector tagerts elements with the clas time block , the invidiaul time blocks in the dailey planner */
+.time-block {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+    margin-bottom: 10px;
+    border: 5px solid rgb(250, 246, 246);
+}
+/* this slector tagerts the imput, the border and font size were adjusted */
+.time-block input[type="text"] {
+    flex: 1;
+    border-width: 5px;
+    transition: transform 0.3s;
+    font-size: 28px;
+    margin-bottom: 0px;
+}
+.time-block input[type="text"]:hover {
+    transform: scale(1.2);
+}
+/* this slectos targets the buttons elments, the style of button and size */
+button {
+    background-color: silver;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+/* this selctor make the element inlarge in size providing the user with increased visability */
+button:hover {
+    background-color: #ccc;
+}
+/* these 3 group of slectors determine the color of elements and the time blocks, based on the time of day */
+.past {
+    background-color: #555;
+    border: 1px solid red;
+}
+.present {
+    background-color: #999;
+    border: 1px solid yellow;
+}
+.future {
+    background-color: #ccc;
+    border: 1px solid green;
+}
